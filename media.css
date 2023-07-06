@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 769px){
+    :root{
+        --HEAD-FONT: 'Work Sans', sans-serif;
+        --TEXT_FONT: 'Jost', sans-serif;
+        --FOOT-FONT:  'Grenze', serif; 
+        --PADDING: 0.5em;
+        --TEXT-COLOR: #fff;
+        --HEAD-COLOR: chartreuse;
+        --FOOT-COLOR: dodgerblue;
+    }
+
+    html{
+        scroll-behavior: smooth;
+        background-color: #333;
+    }
+    .container{
+        width: auto;
+        position: relative;
+    }
+
+    .head-img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 45%;
+    }
+
+    .head-img img{
+        width: 100%;
+        height: auto;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 2.2vw;
+    }
+
+    .head-info{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+    }
+
+    .head-info h1{
+        font-size: 0.9em;
+        font-family: var(--HEAD-FONT);
+    }
+
+    .head-info p, i{
+        margin-top: 0.4em;
+        font-size: 0.7em;
+        font-family: var(--TEXT_FONT);
+        opacity: 0.7;
+    }
+
+    .head-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.4em;
+    }
+
+    .head-nav li{
+        list-style-type: none;
+    }
+
+    .head-nav a{
+        font-size: 0.6em;
+        font-family: var(--TEXT_FONT);
+        text-decoration: none;
+    }
+
+    .head-nav a:hover{
+        text-decoration: underline;
+    }
+
+    .txt>p{
+        font-size: 0.7em;
+        color: var(--TEXT-COLOR);
+        font-family: var(--TEXT_FONT);
+        word-spacing: 0.09em;
+        text-align: center;
+        padding: 0.2em 0.3em;
+        line-height: 1.2;
+    }
+
+    span{
+        color: chartreuse;
+    }
+
+    #cont-head{
+        font-size: 0.8em;
+        text-align: center;
+        font-family: var(--HEAD-FONT);
+        color: var(--HEAD-COLOR);
+        padding: 0.25em;
+    }    
+
+    .cont{
+        width: 80vw;
+        margin: 0.9em auto;
+        padding: 0.2em;
+        display: block;
+    }
+
+    .cont>h1{
+        width: auto;
+        font-weight: bold;
+        font-family: var(--HEAD-FONT);
+        font-size: 0.8em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .cont P{
+        color: var(--TEXT-COLOR);
+        font-family: var(--TEXT-COLOR);
+        font-size: 0.7em;
+        margin: 0.4em auto;
+        text-align: center;
+        letter-spacing: 0.1em;
+        opacity: 0.6;
+        line-height: 1.2;
+    }
+    
+    .cont button{
+        border: 2px solid black;
+        font-family: var(--TEXT_FONT);
+        color: var(--TEXT-COLOR);
+        padding: 0.25em 0.7em;
+        font-size: 0.9;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .cont button:hover,
+    .cont button:visited{
+        background-color: var(--HEAD-COLOR);
+        transition-property: background-color;
+        transition-delay: 0.2s;
+        transition-duration: 0.6s;
+        transition-timing-function: ease;
+    }
+
+    .main-cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pro-cont{
+        margin: 0.3em auto;
+        padding: 0.25em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .work-cont{
+        width: auto;
+        height: fit-content;
+        margin: 0.3em auto;
+    }
+
+    .work-cont h3{
+        font-size: 0.9em;
+        font-family: var(--HEAD-FONT);
+        color: var(--HEAD-COLOR);
+        text-transform: uppercase;
+        padding: 0.25em;
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .work-cont p{
+        text-align: center;
+        text-decoration: uppercase;
+        color: var(--TEXT-COLOR);
+        font-family: var(--TEXT_FONT);
+        padding: 0.25em;
+        color: #fff;
+        text-decoration: underline;
+    }
+    
+    .side-box{
+        border: 1px solid grey;
+        width: 80vw;
+        padding: 0.25em;
+        margin: 0.5em auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-box>p{
+        font-size: 0.6em;
+        color: var(--TEXT-COLOR);
+        font-family: var(--TEXT_FONT);
+        text-align: start;
+        width: fit-content;
+        margin-top: 0.3em;
+    }
+
+    .side-box button{
+        display: none;
+    }
+
+    .client-box{
+        display: flex;
+        gap: 0.25em;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.2em;
+    }
+    
+    #client-name:nth-child(even){
+        font-family: cursive;
+        font-size: 0.8em;
+        opacity: 0.7;
+    }
+    
+    #client-name:nth-child(odd){
+        font-size: 0.8em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0.7;
+    }
+    
+    sub{
+        font-size: 0.2em;
+        opacity: 0.5;
+    }
+
+    .foot{
+        width: 100vw;
+        height: auto;
+        background-color: var(--FOOT-COLOR);
+        color: #fff;
+        padding: 0.25em;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 0.25em;
+    }
+
+    .div-one, .div-two, .div-three{
+        width: 21vw;
+        display: block;
+        margin: 0.4em auto;
+    }
+    
+    .div-one h1, p{
+        margin: 0.3em 0;
+    }
+
+    .div-one h1{
+        font-size: 0.7em;
+    }
+    
+    .div-one address{
+        margin-top: 0.35em;
+    }
+    
+    .div-two h1{
+        margin: 0.2em 0;
+        text-align: center;
+        font-size: 0.7em;
+    }
+    
+    .foot-icons{
+        display: flex;
+        justify-content: center;
+        gap: 0.25em;
+    }
+
+    .foot-icons img{
+        margin-top: 0.4em;
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 0.9vw;
+    }
+    
+    .div-three h1{
+        margin: 0.3em 0;
+        text-align: center;
+        font-size: 0.7em;
+    }
+    
+    .div-three p{
+        text-align: left;
+        text-indent: 0.3em;
+        line-height: 1.2;
+        word-break: keep-all;
+    }
+
+    .div-one, .div-two, .div-three p{
+        font-size: 0.38em;
+    }
+    
+}
